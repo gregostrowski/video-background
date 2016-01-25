@@ -2,28 +2,15 @@
 body {
   margin: 0;
   padding: 0; }
+  @media (max-width: 650px) {
+    body {
+      background: url(../img/sunrise.jpg) no-repeat center center fixed; } }
 
 * {
   -webkit-transition: all 0.2s ease 0s;
   -moz-transition: all 0.2s ease 0s;
   -o-transition: all 0.2s ease 0s;
   transition: all 0.2s ease 0s; }
-
-@media (max-width: 650px) {
-  body {
-    font-size: 12px; } }
-
-@media (max-height: 650px) {
-  body {
-    background-position: 50% 10%; } }
-
-@media (max-width: 425px) {
-  body {
-    font-size: 9px; } }
-
-@media (max-height: 500px) {
-  body {
-    background-position: 50% 20%; } }
 
 /* Video */
 .bg-video {
@@ -38,7 +25,12 @@ body {
   -ms-transform: translateX(-50%) translateY(-50%);
   -moz-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%); }
+  transform: translateX(-50%) translateY(-50%);
+  background: url(../img/sunrise.jpg) no-repeat;
+  background-size: cover; }
+  @media (max-width: 650px) {
+    .bg-video {
+      display: none; } }
 
 /* Main header */
 .outer {

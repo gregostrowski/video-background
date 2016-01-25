@@ -20,5 +20,5 @@ gulp.task('sass.min', function () {
 
 //Watch task
 gulp.task('sass:watch',function() {
-    gulp.watch('sass/**/*.scss',['sass.min']);
+    gulp.watch('sass/**/*.scss',['sass']);
 });
